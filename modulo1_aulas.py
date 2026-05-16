@@ -83,3 +83,39 @@
 #1. Adicione um novo aluno que estão fazendo essa aula.
 #2. Um dos alunos desistiu da aula, agora precisa remover ele da lista.
 #3. Por fim, use o conceito de dicionário para que possa pesquisar um alunos em especifico nessa lista.
+
+#Aula 6 e 7 - Estruturas de dados, fluxos de controle e loops
+#Pilha é uma estrutura de dados que segue o princípio LIFO (Last In, First Out), ou seja, o último elemento adicionado é o primeiro a ser removido. Em Python, podemos usar uma lista para implementar uma pilha, utilizando os métodos append() para adicionar elementos e pop() para remover elementos.
+pilha = [] #cria uma lista vazia chamada pilha, que será usada para implementar a estrutura de dados de pilha.
+pilha.append(1) #adiciona o número 1 à pilha usando o método append().
+pilha.append(2) #adiciona o número 2 à pilha usando o
+pilha.append(3) #adiciona o número 3 à pilha usando o método append().
+print(f" pilha {pilha}") #imprime a pilha atual, que contém os números 1, 2 e 3. O resultado será: pilha [1, 2, 3].
+pilha.pop() #remove o último elemento adicionado à pilha, que é o número 3, usando o método pop().
+print(f" pilha {pilha}") #imprime a pilha atualizada, que agora contém apenas os números 1 e 2. O resultado será: pilha [1, 2].
+
+#fila é uma estrutura de dados que segue o princípio FIFO (First In, First Out), ou seja, o primeiro elemento adicionado é o primeiro a ser removido. Em Python, podemos usar uma lista para implementar uma fila, utilizando os métodos append() para adicionar elementos e pop(0) para remover elementos.
+from collections import deque #importa a classe deque do módulo collections, que é uma estrutura de dados otimizada para operações de fila.
+fila = deque() #cria uma fila vazia usando a classe deque.
+fila.append(1) #adiciona o número 1 à fila usando o método append
+fila.append(2) #adiciona o número 2 à fila usando o método append().
+fila.append(3) #adiciona o número 3 à fila usando o método append
+print(f" fila {fila}") #imprime a fila atual, que contém os números 1, 2 e 3. O resultado será: fila deque([1, 2, 3]).
+fila.popleft() #remove o primeiro elemento adicionado à fila, que é o número 1, usando o método popleft() da classe deque.
+print(f" fila {fila}") #imprime a fila atualizada, que agora contém apenas os números 2 e 3. O resultado será: fila deque([2, 3]).
+
+#Fluxos de controles são estruturas que permitem controlar o fluxo de execução do código com base em condições ou repetições. Em Python, os principais fluxos de controle são: if, elif, else.
+#loops são estruturas de controle de fluxo que permitem repetir um bloco de código enquanto uma condição for verdadeira. Em Python, os principais tipos de loops são: for e while.
+frutas = ['Maça', 'Laranja', 'Banana'] #cria uma lista chamada frutas que contém três elementos: 'Maça', 'Laranja' e 'Banana'.
+for fruta in frutas: #inicia um loop for que itera sobre cada elemento da lista
+    print(fruta) #imprime o nome da fruta atual em cada iteração do loop. O resultado será: fruta: Maça, fruta: Laranja, fruta: Banana.
+
+num = 1
+while num <= 5: #inicia um loop while que continuará executando enquanto a variável num for menor ou igual a 5.
+    print(num) #imprime o valor atual de num em cada iteração do loop. O resultado será: 1, 2, 3, 4, 5.
+    num += 1 #incrementa o valor de num em 1 a cada iteração do loop, garantindo que o loop eventualmente termine quando num ultrapassar o valor de 5.
+
+#1. Crie uma lista e use a declaração da lista.
+#2. Depois aplique os principios de pilha, fila e lista que aprendemos nessa aula, adicionando e inserindo frutas.
+#3. Utilize o laço de repetição para imprimir todos os elementos dessa lista.
+#4. e por fim, crie condições para imprimir somente a maça e laranja. Você só pode imprimir maçã e laranja.

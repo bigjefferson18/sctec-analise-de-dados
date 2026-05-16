@@ -158,6 +158,103 @@ Com base nos conceitos de Listas e Dicionários, realize as seguintes tarefas pa
 
 - **Tarefa 3**: Implemente uma busca utilizando um Dicionário (ex: Matrícula: Nome ou Nome: Nota), permitindo que um aluno específico seja localizado rapidamente pelo sistema através de sua chave.
 
+## 11. Estruturas de Dados Avançadas
+
+Além das listas e dicionários convencionais, podemos utilizar as listas para simular outras estruturas de dados famosas na computação, dependendo da ordem em que os elementos entram e saem.
+
+### 11.1. Pilha (LIFO - Last In, First Out)
+
+Uma **Pilha** funciona como uma pilha de pratos: o último elemento adicionado é, obrigatoriamente, o primeiro a ser removido. 
+- **Inserção**: Feita com `append()` (no final).
+- **Remoção**: Feita com `pop()` (sem passar índice, remove do final).
+
+```python
+pilha = []
+
+# Adicionando elementos (Push)
+pilha.append(1)
+pilha.append(2)
+pilha.append(3)
+print(f"Pilha após inserções: {pilha}") # Saída: [1, 2, 3]
+
+# Removendo o último elemento (Pop)
+pilha.pop()
+print(f"Pilha após um pop: {pilha}")    # Saída: [1, 2]
+```
+
+### 11.2. Fila (FIFO - First In, First Out)
+
+Uma Fila funciona como uma fila de banco: o primeiro que chega é o primeiro a ser atendido. Para otimizar a performance ao remover elementos do início, utilizamos o deque do módulo nativo collections.
+
+- **Inserção**: Feita com `append()` (no final).
+
+- **Remoção**: Feita com `popleft()` (no início).
+
+```python
+from collections import deque
+
+fila = deque()
+
+# Adicionando elementos na fila
+fila.append(1)
+fila.append(2)
+fila.append(3)
+print(f"Fila após inserções: {fila}") # Saída: deque([1, 2, 3])
+
+# Removendo o primeiro elemento
+fila.popleft()
+print(f"Fila após um popleft: {fila}") # Saída: deque([2, 3])
+```
+## 12. Fluxos de Controle e Laços de Repetição (Loops)
+
+As estruturas de controle permitem que o programa tome decisões ou repita blocos de código de forma inteligente.
+### 12.1. Estruturas Condicionais (`if`, `elif`, `else`)
+
+Servem para avaliar se uma ou mais condições são verdadeiras antes de executar um bloco de código.
+### 12.2. Laço `for`
+
+Utilizado quando sabemos previamente quantas vezes queremos repetir um bloco, ou quando precisamos **iterar (percorrer)** os elementos de uma coleção (como listas).
+
+```python
+frutas = ['Maça', 'Laranja', 'Banana']
+
+# O loop passa por cada item da lista e salva temporariamente na variável 'fruta'
+for fruta in frutas:
+    print(fruta)
+```
+### 12.3. Laço while
+
+Executa um bloco de código enquanto uma determinada condição for verdadeira. É fundamental garantir que a condição mude em algum momento para evitar um loop infinito.
+
+```python
+num = 1
+while num <= 5:
+    print(num)
+    num += 1 # Incremento para que a condição (num <= 5) se torne falsa no futuro
+```
+## 💡 Resumo de Fluxos e Estruturas
+| Conceito | Funcionamento Prático | Método Principal|
+|:---|:---|:---|
+| Pilha | "Último que entra, primeiro que sai (LIFO)" | `append()` / `pop()` |
+| Fila | "Primeiro que entra, primeiro que sai (FIFO)" | `append()` / `popleft()` |
+| For | Percorre coleções item por item | `for elemento in lista:` |
+| While | Repete enquanto a condição for real | `while condicao:` |
+
+## 13. 📝 Exercício de Fixação 2
+
+Com base nos conceitos de estruturas de dados listas e (pilhas/filas), laços de repetição e condicionais, realize as seguintes tarefas:
+
+- Tarefa 1: Crie uma lista e use a declaração da lista.
+
+- Tarefa 2: Depois aplique os principios de pilha, fila e lista que aprendemos nessa aula, adicionando e inserindo frutas.
+
+- Tarefa 3: Utilize o laço de repetição para imprimir todos os elementos dessa lista.
+
+- Tarefa 4: e por fim, crie condições para imprimir somente a maça e laranja. Você só pode imprimir maçã e laranja.
+
+
+
+
 
 
 - [📝 Fundamentos de Python: Tipagem e Interação](#-fundamentos-de-python-tipagem-e-interação)
