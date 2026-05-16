@@ -1,3 +1,31 @@
+- [📝 Fundamentos de Python: Tipagem e Interação](#-fundamentos-de-python-tipagem-e-interação)
+  - [1. Verificação de Tipos e Variáveis](#1-verificação-de-tipos-e-variáveis)
+  - [2. Operações Matemáticas](#2-operações-matemáticas)
+  - [3. Manipulação de Strings](#3-manipulação-de-strings)
+  - [4. Características da Linguagem](#4-características-da-linguagem)
+  - [5. Interação com o Usuário](#5-interação-com-o-usuário)
+  - [6. Listas (Arrays Dinâmicos)](#6-listas-arrays-dinâmicos)
+    - [6.1. Índices e Acesso](#61-índices-e-acesso)
+    - [6.2. Manipulação de Elementos](#62-manipulação-de-elementos)
+  - [💡 Resumo de Métodos de Lista](#-resumo-de-métodos-de-lista)
+  - [7. Tuplas (Imutabilidade)](#7-tuplas-imutabilidade)
+  - [8. Dicionários (Pares Chave-Valor)](#8-dicionários-pares-chave-valor)
+  - [9. Módulos e Pacotes](#9-módulos-e-pacotes)
+    - [9.1. Módulos](#91-módulos)
+    - [9.2. Pacotes](#92-pacotes)
+  - [10. 📝 Exercício de Fixação](#10--exercício-de-fixação)
+  - [11. Estruturas de Dados Avançadas](#11-estruturas-de-dados-avançadas)
+    - [11.1. Pilha (LIFO - Last In, First Out)](#111-pilha-lifo---last-in-first-out)
+    - [11.2. Fila (FIFO - First In, First Out)](#112-fila-fifo---first-in-first-out)
+  - [12. Fluxos de Controle e Laços de Repetição (Loops)](#12-fluxos-de-controle-e-laços-de-repetição-loops)
+    - [12.1. Estruturas Condicionais (`if`, `elif`, `else`)](#121-estruturas-condicionais-if-elif-else)
+    - [12.2. Laço `for`](#122-laço-for)
+    - [12.3. Laço while](#123-laço-while)
+  - [💡 Resumo de Fluxos e Estruturas](#-resumo-de-fluxos-e-estruturas)
+  - [13. 📝 Exercício de Fixação 2](#13--exercício-de-fixação-2)
+
+
+
 # 📝 Fundamentos de Python: Tipagem e Interação
 
 Este documento reúne os conceitos básicos de manipulação de variáveis, tipos de dados e entrada/saída de informações aprendidos em aula.
@@ -213,7 +241,7 @@ As estruturas de controle permitem que o programa tome decisões ou repita bloco
 Servem para avaliar se uma ou mais condições são verdadeiras antes de executar um bloco de código.
 ### 12.2. Laço `for`
 
-Utilizado quando sabemos previamente quantas vezes queremos repetir um bloco, ou quando precisamos **iterar (percorrer)** os elementos de uma coleção (como listas).
+Utilizado quando sabemos previamente quantas vezes queremos repetir um bloco, ou quando precisamos **iterar (percorrer)** os elementos de uma coleção (como listas). .
 
 ```python
 frutas = ['Maça', 'Laranja', 'Banana']
@@ -254,23 +282,4 @@ Com base nos conceitos de estruturas de dados listas e (pilhas/filas), laços de
 
 
 
-
-
-
-- [📝 Fundamentos de Python: Tipagem e Interação](#-fundamentos-de-python-tipagem-e-interação)
-  - [1. Verificação de Tipos e Variáveis](#1-verificação-de-tipos-e-variáveis)
-  - [2. Operações Matemáticas](#2-operações-matemáticas)
-  - [3. Manipulação de Strings](#3-manipulação-de-strings)
-  - [4. Características da Linguagem](#4-características-da-linguagem)
-  - [5. Interação com o Usuário](#5-interação-com-o-usuário)
-  - [6. Listas (Arrays Dinâmicos)](#6-listas-arrays-dinâmicos)
-    - [6.1. Índices e Acesso](#61-índices-e-acesso)
-    - [6.2. Manipulação de Elementos](#62-manipulação-de-elementos)
-  - [💡 Resumo de Métodos de Lista](#-resumo-de-métodos-de-lista)
-  - [7. Tuplas (Imutabilidade)](#7-tuplas-imutabilidade)
-  - [8. Dicionários (Pares Chave-Valor)](#8-dicionários-pares-chave-valor)
-  - [9. Módulos e Pacotes](#9-módulos-e-pacotes)
-    - [9.1. Módulos](#91-módulos)
-    - [9.2. Pacotes](#92-pacotes)
-  - [10. 📝 Exercício de Fixação](#10--exercício-de-fixação)
 
