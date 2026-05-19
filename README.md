@@ -54,9 +54,10 @@ Repositório com anotações, exercícios e scripts desenvolvidos durante as aul
   - [12. Fluxos de Controle e Laços de Repetição (Loops)](#12-fluxos-de-controle-e-laços-de-repetição-loops)
     - [12.1. Estruturas Condicionais (`if`, `elif`, `else`)](#121-estruturas-condicionais-if-elif-else)
     - [12.2. Laço `for`](#122-laço-for)
-    - [12.3. Laço `while`](#123-laço-while)
+    - [12.3. Laço while](#123-laço-while)
   - [💡 Resumo de Fluxos e Estruturas](#-resumo-de-fluxos-e-estruturas)
   - [13. 📝 Exercício de Fixação 2](#13--exercício-de-fixação-2)
+
 
 ---
 
